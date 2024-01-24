@@ -34,7 +34,7 @@ app.get('/contact', (req, res) => {
     res.status(200).render('contact.pug', params)
 });
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + './views/index.pug');
+    res.sendFile(__dirname + '/index.pug');
 });
 
 app.post('/', (req, res, ) => {
