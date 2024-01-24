@@ -1,0 +1,60 @@
+
+doctype html
+html 
+    head 
+        style 
+            include ../static/style.css
+    body 
+    nav#navbar
+        ul
+            #logo 
+                img(src="/static/img/png2.png")
+                | HDA
+            li #[a(href = "/") Home ]
+            li #[a(href = "/") About ]
+            li #[a(href = "/contact") Contact us ]
+            li #[a(href = "/") Services ]
+            li #[a(href = "/") Class Info ]
+
+    section#introsection 
+        div  Welcome to Lakshya Dance Academy 
+        .small   Eat sleep Dance Repeat
+    section#missionsection
+        h2 our mission 
+        .card 
+            h3  Dance Perfection
+            .card-box 
+                .card-img 
+                    img(src="/static/img/png1.png")
+
+                    .card-contain 
+                        p this is the best dance academy of the universe
+        .card 
+            h3  Dance the way you like 
+            .card-box 
+                .card-img 
+                    img(src="/static/img/png3.png")
+
+                    .card-contain 
+                        p this is the best dance academy of the universe
+        .card 
+            h3  Expert Teaching
+            .card-box 
+                .card-img 
+                    img(src="/static/img/png4.png")
+
+                    .card-contain 
+                        p this is the best dance academy of the universe
+    section#sponsorsection 
+        h2  Our Sponsors
+        #sponsors 
+            img(src="/static/img/apple-logo.jpg", alt="sponsor image" Class="spimage") 
+            img(src="/static/img/hp-logo.jpg", alt="sponsor image" Class="spimage") 
+            img(src="/static/img/microsoft.jpg", alt="sponsor image" Class="spimage") 
+            img(src="/static/img/skype-logo.jpg", alt="sponsor image" Class="spimage") 
+
+    footer#footer 
+        | copyright 2023 LakshyaDanceAcademy.com | All Rights reserved
+
+    script 
+        include ../static/index.js  
